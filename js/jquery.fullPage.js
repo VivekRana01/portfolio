@@ -707,22 +707,22 @@
                     }, 100);
                 }
 
-                if(options.fitToSection){
-                    //for the auto adjust of the viewport to fit a whole section
-                    clearTimeout(scrollId2);
+                // if(options.fitToSection){
+                //     //for the auto adjust of the viewport to fit a whole section
+                //     clearTimeout(scrollId2);
 
-                    scrollId2 = setTimeout(function(){
-                        if(canScroll){
-                            //allows to scroll to an active section and
-                            //if the section is already active, we prevent firing callbacks
-                            if($(SECTION_ACTIVE_SEL).is(currentSection)){
-                                isResizing = true;
-                            }
-                            scrollPage(currentSection);
-                            isResizing = false;
-                        }
-                    }, 1000);
-                }
+                //     scrollId2 = setTimeout(function(){
+                //         if(canScroll){
+                //             //allows to scroll to an active section and
+                //             //if the section is already active, we prevent firing callbacks
+                //             if($(SECTION_ACTIVE_SEL).is(currentSection)){
+                //                 isResizing = true;
+                //             }
+                //             scrollPage(currentSection);
+                //             isResizing = false;
+                //         }
+                //     }, 1000);
+                // }
             }
         }
 
